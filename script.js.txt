@@ -1,0 +1,24 @@
+document.getElementById('surveyForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Daten aus dem Formular abrufen
+  const name = document.getElementById('name').value;
+  const age = document.getElementById('age').value;
+  const experience = document.getElementById('experience').value;
+  const satisfaction = document.getElementById('satisfaction').value;
+  const comments = document.getElementById('comments').value;
+
+  // Hier könntest du die Daten absenden oder weiterverarbeiten
+  // Zum Beispiel mit Fetch oder einer anderen Methode
+
+  // Hier einfach als Beispiel in der Konsole ausgeben
+  console.log('Name:', name);
+  console.log('Alter:', age);
+  console.log('Erfahrung:', experience, 'Jahre');
+  console.log('Zufriedenheit:', satisfaction);
+  console.log('Kommentare:', comments);
+
+  // Zurücksetzen des Formulars nach dem Absenden
+  this.reset();
+});
+
